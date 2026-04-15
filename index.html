@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic form</title>
+    <style>
+        body{
+            background-color: #b0b8c1;
+            font-family: sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        form{
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0,0, 0, 0.1);
+        }
+        .group{
+            margin-bottom: 15px;
+            display: inline;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+            color: #0e0e0e;
+        }
+       .lab{
+        display: inline;
+        font-weight: normal;
+        }
+        .sub{
+            padding: 12px;
+            background-color: #99b4d0;
+            color: rgb(24, 23, 23);
+            border-radius: 8px;
+            font-weight: bold;
+
+        }
+
+        #output{
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+
+    <form id="form">
+        <div class="group">
+        <label>Name:</label> <br>
+        <input type="text" id="name" name="name"> <br> <br>
+        </div>
+
+        <div class="group">
+        <label>Email:</label> <br>
+        <input type="email" id="email" name="email"> <br><br>
+        </div>
+
+        <div class="group">
+        <label>Age:</label>
+        <input type="number" id="age" name="age">  <br> <br>
+        </div>
+
+        <div class="group">
+        <label>Languge:</label>
+        <input type="checkbox" id="lang" name="lann"> <label for="lan" class="lab">Arabic</label> 
+        <input type="checkbox" id="lang1" name="lann"><label for="lan1" class="lab">English</label> <br> <br>
+        </div>
+
+        <div class="group">
+        <label>Gender:</label>
+        <input type="radio" id="male" value="mal" name="gender"> <label for="male" class="lab">Male</label> 
+        <input type="radio" id="female" value="fem" name="gender"> <label for="female" class="lab">Female</label> <br> <br>
+        </div>
+
+        <button type="submit" class="sub">Submit</button>
+    </form>
+
+    <div id="output">
+      <h2>Result:</h2>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
